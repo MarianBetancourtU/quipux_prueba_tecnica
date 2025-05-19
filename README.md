@@ -35,22 +35,21 @@ Elegí y probé algunos modelos de clasificiacion como Logistic Regression, Supp
 
 ## Instrucciones de de Despliegue y Uso de la mini app
 ### 1. Clonar el repositorio
-### 2. 
-###  3. Crear el Entorno Virtual dentro de la carpeta mini_app
+### 2. Crear el Entorno Virtual dentro de la carpeta mini_app
 Para asegurar que el entorno esté configurado correctamente, sigue estos pasos: 
 `python -m venv env` (en Windows)
-### 4. Activar el Entorno Virtual
+### 3. Activar el Entorno Virtual
 Una vez creado el entorno, debes activarlo: `.\env\Scripts\Activate` (en Windows (PowerShell))
-### 5. Instalar las Dependencias
+### 4. Instalar las Dependencias
 Instala las librerías necesarias directamente desde el archivo requirements.txt: `pip install -r requirements.txt`
-### 6. Generar el Modelo
+### 5. Generar el Modelo
 Generar el archivo  `modelo_polucion.pkl`
 - Abre el notebook con el siguiente comando: `jupyter notebook eda.ipynb`
 - Dentro del notebook, busca la celda que contiene el código para entrenar el modelo.
 - Ejecuta la celda para generar el archivo .pkl.
 - Verifica que el archivo modelo_polucion.pkl se encuentre en la carpeta mini_app
-### 7. Ejecutar la Mini App de Predicción
+### 6. Ejecutar la Mini App de Predicción
 Con el entorno activado, ejecuta la aplicación Flask: `python app.py`
-### 8.Acceder a la Aplicación Web
+### 7.Acceder a la Aplicación Web
 Abre el navegador y dirígete a: `http://127.0.0.1:5000/`
 
