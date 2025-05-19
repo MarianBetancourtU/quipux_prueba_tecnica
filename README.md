@@ -18,7 +18,7 @@ El proyecto está organizado en los siguientes archivos y carpetas:
 
 ### Elección del Tipo de Modelo: 
 Aunque el valor de PM2.5 es continuo, decidí utilizar modelos de clasificación en lugar de regresión por varias razones:
-- Un modelo de clasificación genera información mas consisa y clara al público, por el contrario, un valor numérico exacto de PM2.5 puede ser difícil de interpretar sin un contexto adicional
+- Un modelo de clasificación genera información mas concisa y clara al público, por el contrario, un valor numérico exacto de PM2.5 puede ser difícil de interpretar sin un contexto adicional
 - Los resultados de clasificación son más practicos para la toma de decisiones, ya que las entidades de salud y el público necesitan alertas  (por ejemplo, "No saludable" o "Peligroso"), no números específicos que necesiten más análisis.
 - Las métricas de clasificación como F1 ponderado, accuracy, y recall son más útiles para evaluar si el modelo identifica correctamente el nivel de riesgo.
   
