@@ -51,9 +51,13 @@ Generar el archivo  `modelo_polucion.pkl`
 - Esta es la estructura que debe tener tener la carpeta mini_app/
 
 ├── env                       # Entorno virtual con los requerimientos necesarios
+
 ├── app.py                    # Código de la aplicación Flask
+
 ├── modelo_polucion.pkl       # Archivo del modelo entrenado
+
 ├── templates/                # Carpeta para archivos HTML
+
 │   └── index.html            # Página principal de la aplicación
 
 ### 6. Ejecutar la Mini App de Predicción
