@@ -23,10 +23,12 @@ Aunque el valor de PM2.5 es continuo, decidí utilizar modelos de clasificación
 - Las métricas de clasificación como F1 ponderado, accuracy, y recall son más útiles para evaluar si el modelo identifica correctamente el nivel de riesgo.
   
 ### Elección de Variables para el Modelo
-La selección de variables se basó en un análisis exploratorio de datos . Durante este proceso, realicé análisis de correlación y visualización de las relaciones entre las variables meteorológicas, temporales y el nivel de contaminación (PM2.5).
+La selección de variables se basó en un análisis exploratorio de datos, durante este proceso, realicé análisis de correlación y visualización de las relaciones entre las variables meteorológicas, temporales y el nivel de contaminación (PM2.5).
 Seleccioné solo las variables temporales para predecir la contaminación por las siguientes razones:
 - Al analizar las gráficas de niveles de pm2.5 en el tiempo , se observa un pateon ciclcico, con valores de pm2.5 que aumentan o disminuyen de acuerdo al tiempo.
-- Los valores de factores ambientales como temperatura, punto de rocio etc, tambien muestran un patron ciclico a lo largo del tiempo, que a su vez están directamente influenciados por la epoca del año, por que no necesatiamente podrian aportar mayor información al modelo en cuanto a contaminación. Esto no se puede asegurar, pero al realizar el mapa de correlación no se observa mayor correlacion entre la variable de interés y las otras variables.
+- Los valores de factores ambientales como temperatura, punto de rocio etc, tambien muestran un patron ciclico a lo largo del tiempo, que a su vez están directamente influenciados por la epoca del año, por que no necesatiamente podrian aportar mayor información al modelo en cuanto a niveles de contaminación.
+- En este punto no tiene sentido incluir el año, pero se observa que al no incluir esta variable disminuye la precisisón del modelo, esto puede ser por una pequeña disminución en el promedio anual de contaminacion que se evidencia al analizar la variable año a mayor profundidad.
+- En el mapa de correlación no se observa una buena correlacióon entre la contaminación y las otras variables, por lo que pueden existir otras relaciones no lineales o patrones ocultos que no son evidentes a simple vista o en un análisis de correlación lineal.
 - Al realizar en eltrenamiento de los modelos , las variables meteorologicas no aumentan el rendimiento del modelo.
 - El enfoque de usar solo variables temporales garantiza simplicidad en la predicción y evita el uso de datos meteorológicos que pueden no estar disponibles en tiempo real, al momento de utilizar el modelo.
 
