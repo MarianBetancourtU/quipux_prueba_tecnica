@@ -35,7 +35,7 @@ Elegí y probé algunos modelos de clasificiacion como Logistic Regression, Supp
 
 ## Instrucciones de de Despliegue y Uso de la mini app
 ### 1. Clonar el repositorio
-### 2. Crear el Entorno Virtual dentro de la carpeta mini_app
+### 2. Crear el Entorno Virtual 
 Para asegurar que el entorno esté configurado correctamente, sigue estos pasos: 
 `python -m venv env` (en Windows)
 ### 3. Activar el Entorno Virtual
@@ -48,6 +48,14 @@ Generar el archivo  `modelo_polucion.pkl`
 - Dentro del notebook, busca la celda que contiene el código para entrenar el modelo.
 - Ejecuta la celda para generar el archivo .pkl.
 - Verifica que el archivo modelo_polucion.pkl se encuentre en la carpeta mini_app
+- Esta es la estructura que debe tener tener la carpeta mini_app/
+
+├── env                       # Entorno virtual con los requerimientos necesarios
+├── app.py                    # Código de la aplicación Flask
+├── modelo_polucion.pkl       # Archivo del modelo entrenado
+├── templates/                # Carpeta para archivos HTML
+│   └── index.html            # Página principal de la aplicación
+
 ### 6. Ejecutar la Mini App de Predicción
 Con el entorno activado, ejecuta la aplicación Flask: `python app.py`
 ### 7.Acceder a la Aplicación Web
